@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>HTML Meta Tag</title>
+    </head>
+   <body>
+<!--
+    <center><a href="https://www.hitwebcounter.com" target="_blank" class="India">
+<img src="https://hitwebcounter.com/counter/counter.php?page=8006011&style=0008&nbdigits=1&type=page&initCount=0" title="Free Counter" Alt="web counter"   border="0" style="margin-bottom:6px;" style="margin-top:6px;"/></a> </center>
+     
+-->
+     <iframe id='the_iframe' width="100%" height="700px"></iframe>
+      
+
+  <script type="text/javascript">
+
+
+          var targets = [ //Place target URL here
+        
+    ];
+
+   var urls = [
+    'https://app.powerbi.com/view?r=eyJrIjoiYmU1ZWY4OWQtNGZmMy00ODMxLTk1N2YtNmU2OWJmNTY5Y2IyIiwidCI6ImQ0Mjk5YTk1LTk1MTUtNDMyMi1iZWU3LWY0OGFlODhmNTk4NyIsImMiOjEwfQ%3D%3D',
+    'https://app.powerbi.com/view?r=eyJrIjoiZWIyNzE1NzctZTBiMS00NTUyLWEyN2ItMWU2ZjBjMGI5ZTI4IiwidCI6ImQ0Mjk5YTk1LTk1MTUtNDMyMi1iZWU3LWY0OGFlODhmNTk4NyIsImMiOjEwfQ%3D%3D',
+    'https://app.powerbi.com/view?r=eyJrIjoiYmU1ZWY4OWQtNGZmMy00ODMxLTk1N2YtNmU2OWJmNTY5Y2IyIiwidCI6ImQ0Mjk5YTk1LTk1MTUtNDMyMi1iZWU3LWY0OGFlODhmNTk4NyIsImMiOjEwfQ%3D%3D'
+];
+var seconds = 30;
+function openNext(){
+    document.getElementById('the_iframe').src = urls.shift();
+    if(urls.length)setTimeout('openNext()',seconds*1000);
+}
+openNext();
+ </script>
+
+   </body>
+</html>
